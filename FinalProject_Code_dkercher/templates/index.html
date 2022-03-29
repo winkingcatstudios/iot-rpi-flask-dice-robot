@@ -1,0 +1,31 @@
+<!--
+  index.html
+  Web interface for server
+-->
+
+<html>
+  <head>
+    <title>CSCI 433 Final Project </title>
+    <!-- Simple CSS to set background and text colors -->
+    <link rel="stylesheet" href='../static/style.css'/>
+    <style>
+		body
+    {
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+    <h1>CSCI 433 Final Project</h1>
+    <h3><img src="{{ url_for('video_feed') }}" width="50%"></h3>
+	<hr>
+	<h4> Dice Roller:
+    <!--
+      Set the servo to angle 70 to push dice roller button
+      Code in ServoController will set it back to 145 automatically after delay
+    -->
+		<a href="/roll/70"class="button">Roll</a>
+	<hr>
+	<p> Dan Kercher</p>
+  </body>
+</html>
